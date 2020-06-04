@@ -14,7 +14,7 @@ function App() {
   return (
     <div>
     <Logo appName="Pokedex" handleClick={logWhenClicked} />
-    <BestPokemon  abilitiesOfPokemon = {abilities} />
+    <BestPokemon  abilities = {abilities} />
     <CaughtPokemon updateDate = {date}/>
     </div>
   );

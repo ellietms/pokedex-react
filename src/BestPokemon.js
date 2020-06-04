@@ -1,18 +1,20 @@
 import React from 'react';
+import BestPokemonFetcher from './BestPokemonFetcher';
 
 function BestPokemon(props){
-    return (
+ return (
       <div>
       <strong> which is your favourite Pokemon?</strong>
       <ul>
-      { props.abilitiesOfPokemon.map((ability,index) => {
-        return(<li key={index}> {ability} </li>)
-      }) 
+      {props.abilities.map((ability,index) => 
+      (<li key={index}> {ability} </li>)) 
       }
       </ul>
       </div>
     );
   
   }
+  
+ 
 
-  export default BestPokemon;
+  export default BestPokemonFetcher;
